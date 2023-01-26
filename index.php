@@ -26,10 +26,44 @@ print_r($moto);*/
     $str = (string)$float;
     print_r($str);*/
     
-    $animals = ["Chat", "Chien", "Lapin", "Souris"];
+    /*$animals = ["Chat", "Chien", "Lapin", "Souris"];
+    
     foreach($animals as $animal)
 {
     echo "$animal\n";
+    echo "<br>";
+}*/
+   /* $numbers = [28, 32, 44, -67, 18, 24, -98];
+    
+    for($i = 0; $i < count($numbers); $i++)
+{
+   if($numbers[$i]<0){
+       echo "$numbers[$i]";
+       echo "<br>";
+   }
+   
+}*/
+
+/*$user = [
+    "firstName" => "Barack",
+    "lastName" => "Obama"
+];
+echo "Je suis $user[firstName] $user[lastName], le 44ème président des USA.."
+*/
+
+$users = [
+    [
+        "firstName" => "Mari",
+        "lastName" => "Doucet"
+    ],
+    [
+        "firstName" => "Hugues",
+        "lastName" => "Froger"
+    ]
+];
+foreach($users as $user)
+{
+    echo "{$user["firstName"]} {$user["lastName"]}";
     echo "<br>";
 }
 ?>
